@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70E91A42668BE0C00E0DB05 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E919A2668BE0C00E0DB05 /* NetworkClientProtocol.swift */; };
+		C70E91A52668BE0C00E0DB05 /* URLRequest+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E919B2668BE0C00E0DB05 /* URLRequest+Create.swift */; };
+		C70E91A62668BE0C00E0DB05 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E919C2668BE0C00E0DB05 /* NetworkSessionManager.swift */; };
+		C70E91A72668BE0C00E0DB05 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E919F2668BE0C00E0DB05 /* Routable.swift */; };
+		C70E91A82668BE0C00E0DB05 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91A02668BE0C00E0DB05 /* Router.swift */; };
+		C70E91A92668BE0C00E0DB05 /* BaseFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91A22668BE0C00E0DB05 /* BaseFlowCoordinator.swift */; };
+		C70E91AA2668BE0C00E0DB05 /* FlowCoordinator+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91A32668BE0C00E0DB05 /* FlowCoordinator+Protocol.swift */; };
 		C7FFD9332647B473000D447C /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9292647B473000D447C /* Commons.framework */; };
 		C7FFD9382647B473000D447C /* CommonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9372647B473000D447C /* CommonsTests.swift */; };
 		C7FFD93A2647B473000D447C /* Commons.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD92C2647B473000D447C /* Commons.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C70E919A2668BE0C00E0DB05 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		C70E919B2668BE0C00E0DB05 /* URLRequest+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Create.swift"; sourceTree = "<group>"; };
+		C70E919C2668BE0C00E0DB05 /* NetworkSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionManager.swift; sourceTree = "<group>"; };
+		C70E919F2668BE0C00E0DB05 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		C70E91A02668BE0C00E0DB05 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C70E91A22668BE0C00E0DB05 /* BaseFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFlowCoordinator.swift; sourceTree = "<group>"; };
+		C70E91A32668BE0C00E0DB05 /* FlowCoordinator+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlowCoordinator+Protocol.swift"; sourceTree = "<group>"; };
 		C7FFD9292647B473000D447C /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD92C2647B473000D447C /* Commons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Commons.h; sourceTree = "<group>"; };
 		C7FFD92D2647B473000D447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +80,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70E91992668BE0C00E0DB05 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				C70E919A2668BE0C00E0DB05 /* NetworkClientProtocol.swift */,
+				C70E919B2668BE0C00E0DB05 /* URLRequest+Create.swift */,
+				C70E919C2668BE0C00E0DB05 /* NetworkSessionManager.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		C70E919D2668BE0C00E0DB05 /* FlowController */ = {
+			isa = PBXGroup;
+			children = (
+				C70E919E2668BE0C00E0DB05 /* Routable */,
+				C70E91A12668BE0C00E0DB05 /* Coordinator */,
+			);
+			path = FlowController;
+			sourceTree = "<group>";
+		};
+		C70E919E2668BE0C00E0DB05 /* Routable */ = {
+			isa = PBXGroup;
+			children = (
+				C70E919F2668BE0C00E0DB05 /* Routable.swift */,
+				C70E91A02668BE0C00E0DB05 /* Router.swift */,
+			);
+			path = Routable;
+			sourceTree = "<group>";
+		};
+		C70E91A12668BE0C00E0DB05 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C70E91A22668BE0C00E0DB05 /* BaseFlowCoordinator.swift */,
+				C70E91A32668BE0C00E0DB05 /* FlowCoordinator+Protocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		C76EEAF2264D6CA800C16419 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				C7FFD92C2647B473000D447C /* Commons.h */,
+				C70E919D2668BE0C00E0DB05 /* FlowController */,
+				C70E91992668BE0C00E0DB05 /* NetworkClient */,
 				C7FFD9542647B8D8000D447C /* CoreData */,
 				C76EEAF2264D6CA800C16419 /* Extensions */,
 				C76EEAF4264D6CD800C16419 /* Other */,
@@ -250,14 +303,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70E91A62668BE0C00E0DB05 /* NetworkSessionManager.swift in Sources */,
 				C7FFD9642647B913000D447C /* UIViewController+Spinner.swift in Sources */,
 				C7FFD95A2647B8D8000D447C /* DataFetchRequestController.swift in Sources */,
 				C7FFD9592647B8D8000D447C /* PagingDataSource.swift in Sources */,
+				C70E91A52668BE0C00E0DB05 /* URLRequest+Create.swift in Sources */,
+				C70E91A92668BE0C00E0DB05 /* BaseFlowCoordinator.swift in Sources */,
 				C7FFD9632647B913000D447C /* Data+Decode.swift in Sources */,
 				C7FFD9602647B913000D447C /* ImageDownloader.swift in Sources */,
+				C70E91A72668BE0C00E0DB05 /* Routable.swift in Sources */,
 				C7FFD9622647B913000D447C /* Box.swift in Sources */,
 				C7FFD9612647B913000D447C /* WebImageView.swift in Sources */,
 				C7FFD9582647B8D8000D447C /* CoreDataManager.swift in Sources */,
+				C70E91A42668BE0C00E0DB05 /* NetworkClientProtocol.swift in Sources */,
+				C70E91AA2668BE0C00E0DB05 /* FlowCoordinator+Protocol.swift in Sources */,
+				C70E91A82668BE0C00E0DB05 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
